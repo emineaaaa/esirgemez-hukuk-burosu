@@ -1,0 +1,24 @@
+.ribbon {
+  display: flex;
+  justify-content: space-around;
+  align-items: center; /* Metni dikeyde ortalamak için */
+  background-color: #0C2941; /* Koyu Mavi */
+  margin: 60px;
+  padding: 20px;
+  color: #c4922d;
+  font-size: 20px;
+  height: 100px;
+}
+
+.ribbon-item {
+  text-align: center;
+  font-weight: normal; /* Yazıyı kalın yapmak için */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.ribbon-item span {
+  font-weight: bold; /* Sayıları kalın yapmak için */
+}

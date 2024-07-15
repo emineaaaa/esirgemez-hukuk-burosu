@@ -1,0 +1,19 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa; /* Kırık beyaz için */
+  height: 100%;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: inherit; /* Arka plan rengini body ile aynı yap */
+}
+
+main {
+  flex-grow: 1;
+  background-color: inherit; /* Arka plan rengini body ile aynı yap */
+}

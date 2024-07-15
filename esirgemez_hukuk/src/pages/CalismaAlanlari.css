@@ -1,0 +1,53 @@
+/* PracticeAreas.css */
+.practice-areas {
+    background-color: #f8f9fa;
+    color: #333;
+    padding: 2rem;
+    margin: 0;
+  }
+  
+  .banner {
+    margin-top: -300px; /* Yukarıdan değil, yukarıya doğru gidecekse margin-top olması gerekir. */
+  }
+
+  
+  .content {
+    max-width: 800px;
+    padding: 20px;
+    text-align: left;
+  }
+  
+  .content h2 {
+    color: #144072;
+    margin-bottom: 20px;
+  }
+  
+  .content p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  .content h3 {
+    color: #144072;
+    margin-bottom: 10px;
+  }
+  
+  .content ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .content ul li {
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 20px;
+  }
+  
+  .content ul li:before {
+    content: '•';
+    color: #c4922d;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  

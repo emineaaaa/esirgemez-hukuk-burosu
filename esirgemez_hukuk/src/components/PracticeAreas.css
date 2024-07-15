@@ -1,0 +1,65 @@
+.practice-areas {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap; /* Kartların ekran boyutuna göre sarılmasını sağlar */
+  padding: 22rem; /* Uygun padding ayarlayın */
+  width: 100%; /* Genişliği yüzde olarak ayarlayın */
+  box-sizing: border-box; /* Padding'in genişliğe dahil edilmesini sağlar */
+  margin-top: -100px;
+  margin-bottom: 150px;
+}
+
+.area-card {
+  position: relative;
+  padding: 1rem;
+  border-radius: 5px;
+  text-align: center;
+  width: 200px;
+  height: 200px;
+  margin-right:15px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s ease; /* Kartın büyüme animasyonu */
+  z-index: 1; /* Kart içeriğinin görünmesi için */
+  background-color: #99badb; /* Hafif beyaz arka plan */
+  margin-bottom: 200px;
+  margin-top: 200px;
+}
+
+.area-card h2, .area-card p {
+  position: relative; /* Yazıların üstte kalmasını sağlamak için */
+  z-index: 2; /* Yazıların en üstte kalmasını sağlamak için */
+  color: #1c3b55; /* Yazı rengi */
+
+}
+
+.area-card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.5; /* Arka plan resminin varsayılan opaklığı */
+  z-index: 0; /* Kart içeriğinin arkasında ama kartın kendisinin önünde */
+  transition: opacity 0.3s ease; /* Arka plan resminin opaklık geçişi */
+
+}
+
+.area-card:hover::after {
+  opacity: 0.9; /* Kart üzerine gelindiğinde arka plan resminin opaklığı */
+}
+
+.area-card.ceza-hukuku::after {
+  background-image: url('/ceza-hukuku.jpeg');  /* Arka plan resmi - Ceza Hukuku */
+}
+
+.area-card.aile-hukuku::after {
+  background-image: url('/aile-hukuku.jpg'); /* Arka plan resmi - Aile Hukuku */
+}
+
+.area-card.ticaret-hukuku::after {
+  background-image: url('/ticaret-hukuku.jpeg'); /* Arka plan resmi - Ticaret Hukuku */
+}

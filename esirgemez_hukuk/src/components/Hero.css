@@ -1,0 +1,43 @@
+/* Hero.css */
+.hero {
+  background: url('/hukukk.jpeg') no-repeat center center/cover;
+  color: #1c3b55;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Dikey merkezleme */
+  align-items: flex-start; /* Yatayda sola hizalama */
+  text-align: left; /* Metni sola hizalama */
+  padding-left: 2rem; /* Soldan boşluk */
+  padding-top: 2rem; /* Yukarıdan boşluk */
+  overflow: hidden; /* Taşan içeriği gizle */
+  margin-top: 120px;
+}
+
+.cta {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #1c3b55;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Butona yumuşak bir renk geçişi */
+}
+
+.cta:hover {
+  background-color: #254a6d; /* Buton hover rengini ayarlayın */
+}
+
+.slide-in-left {
+  opacity: 0; /* İlk başta görünmez */
+  transform: translateX(-50px); /* Sola kayma */
+  animation: slideIn 1s forwards; /* 1 saniyelik animasyon, ileriye doğru çalışır */
+  
+}
+
+@keyframes slideIn {
+  to {
+    opacity: 1; /* Opaklığı 1 yapar */
+    transform: translateX(0); /* Orijinal konuma getirir */
+  }
+}
